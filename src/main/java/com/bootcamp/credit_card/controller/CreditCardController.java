@@ -1,7 +1,7 @@
 package com.bootcamp.credit_card.controller;
 
 import com.bootcamp.credit_card.model.CreditCard;
-import com.bootcamp.credit_card.service.ServiceCreditCard;
+import com.bootcamp.credit_card.service.CreditCardService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
@@ -11,8 +11,10 @@ import reactor.core.publisher.Mono;
 @RequiredArgsConstructor
 @RequestMapping("/credit_card")
 
-public class ControllerCreditCard {
-    private final ServiceCreditCard service;
+public class CreditCardController {
+
+    private final CreditCardService service;
+
     @GetMapping
     public Flux<CreditCard> getCreditCards() {
         return service.findAll();

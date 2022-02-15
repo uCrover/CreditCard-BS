@@ -9,7 +9,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 @RequiredArgsConstructor
-public class ServiceCreditCardImpl implements ServiceCreditCard{
+public class CreditCardServiceImpl implements CreditCardService {
 
     private final ICreditCardRepository repository;
 
