@@ -1,7 +1,8 @@
-package com.bootcamp.credit_card.service;
+package com.bootcamp.credit_card.service.impl;
 
 import com.bootcamp.credit_card.model.ConsumeCredit;
 import com.bootcamp.credit_card.repository.IConsumeCreditRepository;
+import com.bootcamp.credit_card.service.ConsumeCreditService;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -12,7 +13,7 @@ import java.time.LocalDateTime;
 
 @RequiredArgsConstructor
 @Service
-public class ConsumeCreditServiceImpl implements ConsumeCreditService{
+public class ConsumeCreditServiceImpl implements ConsumeCreditService {
 
     private final IConsumeCreditRepository repository;
 
